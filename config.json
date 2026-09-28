@@ -1,0 +1,68 @@
+{
+  "token": "ВСТАВЬ_В_ПЕРЕМЕННУЮ_DISCORD_TOKEN",
+  "guildId": "1533829718443294871",
+  "adminRoleIds": [],
+  "http": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "trustProxy": true
+  },
+  "api": {
+    "secret": "ПРИДУМАЙ_ЗАДАЁТСЯ_В_ПЕРЕМЕННОЙ_API_SECRET"
+  },
+  "relay": {
+    "enabled": true,
+    "secret": "ПРИДУМАЙ_ЗАДАЁТСЯ_В_ПЕРЕМЕННОЙ_RELAY_SECRET",
+    "allowedIps": [
+      "46.174.53.208"
+    ],
+    "allowedWebhookIds": [],
+    "maxQueue": 5000,
+    "maxAgeHours": 48
+  },
+  "presence": {
+    "enabled": true,
+    "updateIntervalSec": 60,
+    "text": "👥 Участников: {members} | 🟢 Онлайн: {online}",
+    "serverOfflineText": "",
+    "type": "custom"
+  },
+  "twitch": {
+    "enabled": true,
+    "clientId": "TWITCH_CLIENT_ID",
+    "clientSecret": "TWITCH_CLIENT_SECRET",
+    "checkIntervalSec": 60,
+    "offlineConfirmChecks": 2,
+    "notifyChannelId": "1539555104095735839",
+    "mentionOnStart": "",
+    "streamers": [
+      {
+        "url": "https://www.twitch.tv/d03u",
+        "steamId": "76561199276413839"
+      }
+    ]
+  },
+  "playtime": {
+    "enabled": true,
+    "showOnlyStreamers": false,
+    "commandStats": "stats",
+    "commandReset": "statsreset"
+  },
+  "console": {
+    "enabled": true,
+    "command": "консоль",
+    "ephemeral": true,
+    "allowedCommands": [
+      "say",
+      "kick",
+      "ban",
+      "banid",
+      "unban",
+      "status",
+      "players",
+      "server.save",
+      "oxide.reload",
+      "o.reload"
+    ]
+  }
+}
